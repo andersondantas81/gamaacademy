@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Formulário de cadastro</title>
+  </head>
+  <body>
+    <form id="cadastro" action="" method="ger">
+      <fieldset>
+        <legend>Formulário de cadastro</legend>
+        <div>
+          <label class="email">Email:</label>
+          <input
+            class="email"
+            id="email"
+            type="email"
+            required
+            placeholder="Digite seu email"
+          />
+        </div>
+        <br /><br />
+        <div>
+          <label>Senha:</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            required
+          />
+        </div>
+        <br /><br />
+        <div>
+          <label>Digite a senha novamente: </label>
+          <input
+            type="password"
+            id="senha2"
+            name="senha2"
+            required
+          />
+        </div>
+        <br /><br /><br />
+
+        <input type="submit" class="button" onclick="valida_campos()" value="Enviar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
