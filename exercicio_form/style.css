@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  margin: 10px;
+  
+}
+
+fieldset {
+  border: thick double #fff;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+legend {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+label{
+  font-weight: 700;
+  margin-left: 10px;
+}
+.email {
+  margin-top: 20px;
+}
+.button {
+  width: 15%;
+  margin: 0 0 10px 20px;
+  padding: 5px 10px;
+}
