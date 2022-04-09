@@ -1,0 +1,33 @@
+.bola1 {
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000000;
+  background-color: yellow;
+}
+.bola2 {
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000000;
+  background-color: green;
+}
+.bola3 {
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000000;
+  background-color: red;
+}
+.bola4 {
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000000;
+  background-color: blue;
+}
+
