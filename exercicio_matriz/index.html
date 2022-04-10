@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=ddiv, initial-scale=1.0">
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastrar usuário</title>
+</head>
+<body>
+  <div id="area">
+    <fieldset>
+      <legend>Cadastro de pessoas</legend>
+      <label>Nome: </label>
+      <input type="text" name="nome"  id="idNome"/><br /><br />
+      
+      <label>Idade: </label>
+      <input type="text" name="idade" id="idIdade"/><br />
+      <input type="button" id="btn_incluir" onclick="incluirRegistro()" value="Incluir"/>
+      <input type="button" id="btn_exibir" onclick="exibir()" value="Exibir Lista"/>
+      
+    </fieldset>    
+    <ul id="lista">
+  
+    </ul>
+  </div>
+</body>
+</html>
