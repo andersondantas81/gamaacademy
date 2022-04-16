@@ -1,0 +1,14 @@
+h2{
+  color: #fff;
+}
+#tabuada {
+  background-image: url("./fundo.jpg");
+  width: 340px;
+  padding-left: 150px;
+
+}
+#resposta {
+  display: inline;
+  font-size: 22px;
+  color: white;
+}
