@@ -1,0 +1,70 @@
+.cssConteiner {
+  display: flex;
+  justify-Content: flex-start;
+  align-Items: center;
+  flex-Direction: column;
+  width: 325px;
+  padding: 5px 5px 5px 5px;
+  background-color: #ebe2e2;
+  border: 1px solid #000;
+}
+
+.cssBotoes {
+  flex-Direction: row;
+  flex-Wrap: wrap;
+  margin-left: 13px;
+}
+
+.titulo{
+  display: flex;
+  flex-Direction: row;
+}
+
+.cssTela {
+  display: flex;
+  padding-Left: 20px;
+  padding-Right: 20px;
+  justify-Content: center;
+  align-Items: flex-start;
+  background-Color: rgb(172, 170, 170);
+  flex-Direction: column;
+  width: 260px;
+}
+
+.cssTelaRes {
+  font-Size: 50px;
+  color: #fff;
+  height: 50px;
+}
+.cssTelaResVermelho {
+  font-Size: 50px;
+  color: rgb(237, 62, 62);
+  height: 50px;
+}
+
+.cssTelaOper {
+  font-Size: 25px;
+  color: #fff;
+  height: 20px;
+}
+
+.cssBtn {
+  margin-top: 2px;
+  font-Size: 30px;
+  height: 75px;
+  width: 75px;
+  padding: 20px;
+  background-Color: #000;
+  color: #fff;
+  border-Color: #000;
+  text-Align: center;
+  outline: none;
+}
+
+.imagem {
+  background-image: url("./imagem.png");
+  width: 32px; 
+  height:32px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
