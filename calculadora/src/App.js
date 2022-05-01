@@ -4,7 +4,8 @@ import "./style.css";
 const App = () =>{
 
   const [valorDigitado, setValorDigitado] = useState(''); 
-  const [resultado, setResultado] = useState(0);  
+  const [resultado, setResultado] = useState(0); 
+  const [historico, setHistorico] = useState([]);  
   const [operacao, setOperacao] = useState(false); 
   var teclas = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'Escape', 'Backspace', '.', '(', ')', '/', '*', '-', '+', 'Enter']
 
@@ -34,19 +35,34 @@ const App = () =>{
     }
   };
 
-  const Tela = (valor, res) => {
+
+  const exibirHistorico = () => {
+    const array = historico.toString();
+    return (
+      alert(
+        array.replace(/,/g, "\n")        
+      ))
+  };
+
+  const Tela = (valor, res) => {   
     if(res === 'ERRO') {
       return (
         <div className="cssTela">
           <span className="cssTelaOper">{valor}</span>
           <span className="cssTelaResVermelho">{res}</span>
+          <input type="submit" value="Historico"/>
         </div>
       ) 
     } else {
       return (
-        <div className="cssTela">
+        <div>
+          <div className="cssTela">
           <span className="cssTelaOper">{valor}</span>
           <span className="cssTelaRes">{res}</span>
+        </div>
+        <div>
+             <input type="submit" onClick={exibirHistorico} value="Historico"/>
+        </div>
         </div>
       )
     }
@@ -60,6 +76,7 @@ const App = () =>{
   }
 
   const acionarDigito = (d) => {
+    //retorna o útimo elemento da expressão
     let expressao = valorDigitado.slice(-1);
     
     if(valorDigitado === '' && (d === '+' || d === '-' || d === '*' || d === '/')){
@@ -93,6 +110,7 @@ const App = () =>{
     setOperacao(false);
     setValorDigitado('');
     setResultado(0);
+    setHistorico([]);
     return
   }
 
@@ -108,8 +126,10 @@ const App = () =>{
     try {
       const r = eval(valorDigitado);
       setResultado(r);
+      setHistorico([valorDigitado+" = "+r].concat(historico))
       setOperacao(true);
     } catch (error) {
+      setHistorico(valorDigitado+"=> ERRO")
       setResultado('ERRO');
     }
   }

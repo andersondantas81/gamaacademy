@@ -31,6 +31,10 @@
   width: 260px;
 }
 
+input {
+ width: 100%;
+}
+
 .cssTelaRes {
   font-Size: 50px;
   color: #fff;
