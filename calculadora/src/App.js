@@ -48,6 +48,7 @@ const App = () =>{
     if(res === 'ERRO') {
       return (
         <div className="cssTela">
+          <input type="submit" className="botao" onClick={exibirHistorico} />
           <span className="cssTelaOper">{valor}</span>
           <span className="cssTelaResVermelho">{res}</span>
           <input type="submit" value="Historico"/>
@@ -55,15 +56,13 @@ const App = () =>{
       ) 
     } else {
       return (
-        <div>
-          <div className="cssTela">
+    
+        <div className="cssTela">
+          <input type="submit" className="botao" onClick={exibirHistorico} />
           <span className="cssTelaOper">{valor}</span>
           <span className="cssTelaRes">{res}</span>
         </div>
-        <div>
-             <input type="submit" onClick={exibirHistorico} value="Historico"/>
-        </div>
-        </div>
+
       )
     }
     

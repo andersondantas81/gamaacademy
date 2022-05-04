@@ -1,3 +1,8 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url("./sinais.jpg");
+}
 .cssConteiner {
   display: flex;
   justify-Content: flex-start;
@@ -71,4 +76,12 @@ input {
   height:32px;
   margin-top: 10px;
   margin-right: 5px;
+}
+
+.botao {
+  margin-top: 5px;
+  margin-left: 240px;
+  background-image: url("./history.png");
+  width: 28px; 
+  height:28px;
 }
